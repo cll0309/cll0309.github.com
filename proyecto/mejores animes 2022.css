@@ -1,0 +1,297 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+#inicio {
+  height: 80px;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 4px;
+  color: white;
+  border: 4px solid rgb(0, 0, 0);
+}
+header {
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  background-color: blue;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.container {
+  height: 100vh;
+  /*width: 100vw;* para que ocupe todo el hancho de la pantalla*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.content {
+  max-height: 300px;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.7);
+  position: absolute;
+}
+table {
+  border-collapse: separate;
+}
+td {
+  text-align: center;
+  border: 1px solid black;
+  background-color: transparent;
+}
+thead {
+  border: 1px solid black;
+}
+header {
+  border: 1px solid black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  opacity: 0.8;
+}
+#titan {
+  background-image: url(titan.jpg);
+  height: 93vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+}
+h2 {
+  display: inline-block;
+}
+body {
+  text-align: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#titulo2 {
+  color: white;
+  border: solid 4px black;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#titulo3 {
+  color: white;
+  border: solid 4px black;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#demonios {
+  background-image: url(demon.png);
+  height: 94vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+}
+#FAMILY {
+  background-image: url(family.jpg);
+  height: 94vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+}
+#titulo4 {
+  color: white;
+  border: solid 4px black;
+}
+#vanitas {
+  background-image: url(vanitas.jpg);
+  height: 94vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+}
+#titulo5 {
+  color: white;
+  border: solid 4px black;
+}
+#darling {
+  background-image: url(darling.png);
+  height: 94vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+}
+#titulo6 {
+  color: white;
+  border: solid 4px black;
+}
+#komicant {
+  background-image: url(komi.jpg);
+  height: 94vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+}
+#titulo7 {
+border: 4px solid black;
+  color: white;
+}
+#primerpagina{
+  display: block;
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+  border: 3px solid white;
+  padding: 6px 6px;
+  font-size: 1.5em;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#agua {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  display: block;
+  border: 3px solid white;
+  padding: 6px 6px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.audio{
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  background-color: white;
+}
+/*Aqui va el comentario
+color de referencia 
+#0B7A75
+
+hay un orden de prioridades cuando varios elementos tratan de 
+modificar el mismo elemento en este caso seria asi
+
+1. black!important{cuando agredo el atributo !importan, este se 
+  sobreescribe por encima de cualquier otro incluso por el style, por
+  ende el navegador priorisara este atributo y sera al que priorise 
+  mostrar
+2. style, el style es el segundo atributo mas importante al que el 
+navegador priorisa entonces, cuando el navegador no entiende el !important
+este procede a mostrar el atributo style ya que es el segundo mas impotante
+
+##### luego el orden va por selectores
+1. por ID
+2. selectores por clase, atributos o seudo clases
+3. selectores de tipo y seudo elementos
+
+ejemplo
+<div class="content"> aqui va algo </div>
+ 
+si se tiene 3 elementos como 
+
+#2 
+div.content {background-color:yellow; }
+
+#3 
+div {background-color: black; }
+
+#1 
+.content{ background-color: red; }
+
+el orden seria { #2,#1 y #3} y esto porque? 
+
+div.content tiene mas releveancia que un {div, o un .content}
+esto ya que esta siendo mas especifico a la hora de llamar al elemento
+podriamos decir que mientras mas especifico se sea, el navedor priorisara
+ese llamado
+
+esto mismo ocurre con elementos combinados de clase y id
+
+#1
+#div{background-color: blue; }
+
+#3
+#div.content {background-color: purple; }
+
+#2
+div#div{background-color: grey; }
+
+en este caso el orden seria { #3, #1 y #2}
+
+porque en este caso si el #2 es mas especifivo es el ultimo?
+esto se debe a que el selector de id y de clase estan por encima que 
+un selector de id y el de id esta por encima que el de tipo "etiqueta y id"
+
+si al #2 se le hace mas especifico y se modifica de la siguiente manera
+
+div#div.content{background-color:grey; }
+como ahora es mas especifico y se le agrego la clase content, este ahora es
+mucho mas especifico que los otros 2 por lo tanto el orden cambia y quedaria
+de la siguiente forma { #2, #3 y #1} 
+*/
+
+  /* por si se desea cambiar de color con un efecto de transicion
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+el hover es como un reajuste de los colores ya puestos en un inicio
+#agua:hover {
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+}
+*/
+
+/*Pseudo clases mas comunes
+hover
+cuando el mause esta encima de un link este se torna mas transparente para que
+el usuario sepa que puede seleccionarlo o que se encuentra por encima de este link
+
+active
+es cuando se preciona con el mause un elemento o link, mientras se mantenga pulsado o se pulse
+este mantendra el cambio de color o hara un cambio momentaneo por el mismo
+
+focus este se una cuando se tiene el foco del teclado por encima de un elemento, en lo personal
+no me agrada mucho ya que opaca mucho lo que es las letras del link
+cuando el foco tiene el link se preciona enter y este abre el enlace y mientras no se precione
+el color por el que cambia focus se mantiene
+*/
